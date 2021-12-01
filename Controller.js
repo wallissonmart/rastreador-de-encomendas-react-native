@@ -12,6 +12,7 @@ app.use(express.static('assets'));
 let user = models.User;
 let tracking = models.Tracking;
 let product = models.Product;
+let token=models.Token;
 
 app.post("/login", async (req, res) => {
   let response = await user.findOne({
@@ -130,6 +131,20 @@ app.post('/rastreio', async (req, res) => {
     res.send(JSON.stringify(`Nenhum produto encontrado`));
   } else {
     res.send(JSON.stringify(`Sua encomenda ${response.Products[0].name} já está a caminho ${response.local}.`))
+  }
+});
+
+//Grava o token no banco
+app.post('/token',async(req,res)=>{
+  let response=await token.findOne({
+      where:{token:req.body.token}
+  });
+  if(response == null){
+      token.create({
+          token: req.body.token,
+          createdAt: new Date(),
+          updatedAt: new Date()
+      });
   }
 });
 
