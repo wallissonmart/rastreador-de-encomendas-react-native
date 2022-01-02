@@ -4,7 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import MenuAreaRestrita from "../../assets/components/MenuAreaRestrita";
 import config from '../../config/config';
 import { css } from '../../assets/css/Css';
-import Logomarca from '../../assets/img/logo.png';
+import Logomarca from '../../assets/img/logo.gif';
 import * as Sharing from 'expo-sharing';
 import * as FileSystem from 'expo-file-system';
 
@@ -79,20 +79,22 @@ export default function Cadastro({ navigation }) {
             {response && (
                 <View>
                     <Image style={{ alignSelf: 'center' }} source={{ uri: response, height: 180, width: 180 }} />
-                    <Button title='Compartilhar' onPress={shareQR()}/>
+                    <Button title='Compartilhar' onPress={shareQR()} />
                 </View>
             )}
+
             <View style={css.login__input}>
                 <Image style={{ alignSelf: 'center' }} source={Logomarca} />
-                <TextInput style={css.inputTextSimple}
+                <TextInput style={css.inputText}
                     placeholder='Nome do produto:'
                     onChangeText={text => setProduct(text)}
                     value={product}
                 />
             </View>
             <TouchableOpacity style={css.login__button} onPress={() => sendForm()}>
-                <Text>Cadastrar</Text>
+                <Text style={css.login__buttonText}>Cadastrar</Text>
             </TouchableOpacity>
+
         </View>
     );
 }

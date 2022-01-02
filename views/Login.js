@@ -12,7 +12,7 @@ export default function Login({ navigation }) {
 
   //Envio do formulário de login
   async function sendForm() {
-    let response = await fetch("http://192.168.0.36:3000/login", {
+    let response = await fetch("http://192.168.0.34:3000/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -80,7 +80,7 @@ export default function Login({ navigation }) {
   return (
     <KeyboardAvoidingView style={[css.container, css.darkbg]}>
       <View style={css.login__logomarca}>
-        <Image source={require("../assets/img/logo.png")} />
+        <Image style={{ width: 320, height: 320 }} source={require("../assets/img/logo.gif")} />
       </View>
 
       <View>

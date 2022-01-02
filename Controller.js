@@ -12,7 +12,7 @@ app.use(express.static('assets'));
 let user = models.User;
 let tracking = models.Tracking;
 let product = models.Product;
-let token=models.Token;
+let token = models.Token;
 
 app.post("/login", async (req, res) => {
   let response = await user.findOne({
@@ -37,7 +37,7 @@ app.post('/verifyPass', async (req, res) => {
       response.save();
       res.send(JSON.stringify('Senha atualizada com sucesso!'));
     } else {
-      res.send(JSON.stringify('Nova Senha e Confirmação não conferem!'));
+      res.send(JSON.stringify('Nova senha e confirmação não conferem!'));
     }
   }
 });
@@ -135,16 +135,16 @@ app.post('/rastreio', async (req, res) => {
 });
 
 //Grava o token no banco
-app.post('/token',async(req,res)=>{
-  let response=await token.findOne({
-      where:{token:req.body.token}
+app.post('/token', async (req, res) => {
+  let response = await token.findOne({
+    where: { token: req.body.token }
   });
-  if(response == null){
-      token.create({
-          token: req.body.token,
-          createdAt: new Date(),
-          updatedAt: new Date()
-      });
+  if (response == null) {
+    token.create({
+      token: req.body.token,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    });
   }
 });
 

@@ -16,7 +16,7 @@ export default function MenuAreaRestrita(props) {
         style={css.button__home2}
         onPress={() => props.navigation.navigate("Home")}
       >
-        <Icon name="home" size={20} color="#999" />
+        <Icon name="home" size={20} color="black" />
       </TouchableOpacity>
 
       <Text style={css.area__title}>
@@ -24,7 +24,7 @@ export default function MenuAreaRestrita(props) {
       </Text>
 
       <TouchableOpacity style={css.button__logout} onPress={() => logout()}>
-        <Icon name="sign-out" size={20} color="#999" />
+        <Icon name="sign-out" size={20} color="black" />
       </TouchableOpacity>
     </View>
   );

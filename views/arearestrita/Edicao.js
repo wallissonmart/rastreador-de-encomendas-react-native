@@ -103,9 +103,10 @@ export default function Edicao({ navigation }) {
     }
 
     return (
-        <View>
+        <View style={css.contaneredicao}>
             <MenuAreaRestrita title='Edição' navigation={navigation} />
-            <Text>{response}</Text>
+            <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 25, padding: 30, textAlign: 'center' }}>Leia o produto que deseja editar com o QR Code{response}</Text>
+
             <BarCodeScanner
                 onBarCodeScanned={scanned ? undefined : value => handleBarCodeScanned(value)}
                 style={css.qr__code(displayQR)}
@@ -131,11 +132,11 @@ export default function Edicao({ navigation }) {
                 </View>
 
                 <TouchableOpacity style={css.login__button} onPress={() => sendForm()}>
-                    <Text>Atualizar</Text>
+                    <Text style={{ textAlign: 'center' }}>Atualizar</Text>
                 </TouchableOpacity>
 
                 {scanned &&
-                    <View>
+                    <View style={{ textAlign: 'center', paddingTop: 20 }}>
                         <Button
                             title='Escanear Novamente'
                             onPress={() => readAgain()}

@@ -20,6 +20,6 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "urlRoot": "http://192.168.0.36:3000/",
-  "origin": "Av. Paulista, 200 - São Paulo / SP"
+  "urlRoot": "http://192.168.0.34:3000/",
+  "origin": "Plano Piloto, 200 - Brasília / DF"
 }

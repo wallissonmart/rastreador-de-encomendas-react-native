@@ -42,7 +42,7 @@ export default function Profile({ navigation }) {
     }
 
     return (
-        <View style={[css.container, css.containerTop]}>
+        <View style={[css.containerProfile, css.containerTop]}>
             <MenuAreaRestrita title='Perfil' navigation={navigation} />
             <Text style={css.profile__input2}>Deseja trocar de senha?</Text>
             <View style={css.login__form}>

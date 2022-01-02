@@ -7,66 +7,65 @@ import { Home, Login, Rastreio } from "./views";
 import AreaRestrita from "./views/arearestrita/AreaRestrita";
 import Constants from 'expo-constants';
 import * as Permissions from 'expo-permissions';
-import {Notifications} from 'expo';
+import { Notifications } from 'expo';
 import config from './config/config';
 
 export default function App() {
   const Stack = createStackNavigator();
   const [expoPushToken, setExpoPushToken] = useState(null);
 
-  useEffect(()=>{
+  useEffect(() => {
     registerForPushNotificationsAsync();
-  },[]);
-  
-  useEffect(()=>{
-    if(expoPushToken != null){
-        sendToken();
+  }, []);
+
+  useEffect(() => {
+    if (expoPushToken != null) {
+      sendToken();
     }
-  },[expoPushToken]);
+  }, [expoPushToken]);
 
   //Registra o token do usuário
-async function registerForPushNotificationsAsync(){
-  if (Constants.isDevice) {
+  async function registerForPushNotificationsAsync() {
+    if (Constants.isDevice) {
       const { status: existingStatus } = await Permissions.getAsync(Permissions.NOTIFICATIONS);
       let finalStatus = existingStatus;
       if (existingStatus !== 'granted') {
-          const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
-          finalStatus = status;
+        const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
+        finalStatus = status;
       }
       if (finalStatus !== 'granted') {
-          alert('Failed to get push token for push notification!');
-          return;
+        alert('Failed to get push token for push notification!');
+        return;
       }
       const token = await Notifications.getExpoPushTokenAsync();
       setExpoPushToken(token);
-  } else {
+    } else {
       alert('Must use physical device for Push Notifications');
-  }
+    }
 
-  if (Platform.OS === 'android') {
+    if (Platform.OS === 'android') {
       Notifications.createChannelAndroidAsync('default', {
-          name: 'default',
-          sound: true,
-          priority: 'max',
-          vibrate: [0, 250, 250, 250],
+        name: 'default',
+        sound: true,
+        priority: 'max',
+        vibrate: [0, 250, 250, 250],
       });
+    }
   }
-}
 
-//Envio do token
-async function sendToken()
-{
-    let response=await fetch(config.urlRoot+'token',{
-        method:'POST',
-        headers:{
-            Accept:'application/json',
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify({
-            token: expoPushToken
-        })
+  //Envio do token
+  async function sendToken() {
+    let response = await fetch(config.urlRoot + 'token', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        token: expoPushToken
+      })
     });
-}
+  }
 
   return (
     <NavigationContainer>
@@ -75,10 +74,10 @@ async function sendToken()
           name="Home"
           component={Home}
           options={{
-            title: "WALLMART",
+            title: "Home",
             headerStyle: { backgroundColor: "gray" },
             headerTintColor: "black",
-            headerTitleStyle: { fontWeight: "bold", alignSelf: "center" }
+            headerTitleStyle: { fontSize: 20, fontWeight: "bold", alignSelf: "center" }
           }}
         />
         <Stack.Screen
@@ -86,7 +85,16 @@ async function sendToken()
           options={{ headerShown: false }}
           component={Login}
         />
-        <Stack.Screen name="Rastreio" component={Rastreio} />
+        <Stack.Screen name="Rastreio"
+          component={Rastreio}
+          options={{
+            headerShown: false,
+            title: "Rastreio",
+            headerStyle: { backgroundColor: "gray" },
+            headerTintColor: "black",
+            headerTitleStyle: { paddingLeft: 0, fontSize: 20, fontWeight: "bold", alignSelf: "center" }
+          }}
+        />
         <Stack.Screen
           name="AreaRestrita"
           options={{ headerShown: false }}

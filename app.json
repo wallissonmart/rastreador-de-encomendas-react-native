@@ -7,12 +7,12 @@
       "**/*"
     ],
     "orientation": "portrait",
-    "icon": "./assets/img/icon.png",
+    "icon": "./assets/img/newicon.png",
     "splash": {
       "image": "./assets/img/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#000"
     }
   },
-  "name": "exercicio"
+  "name": "Wallisson Express"
 }

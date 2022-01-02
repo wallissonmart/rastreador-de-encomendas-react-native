@@ -6,7 +6,7 @@ import { Profile, Cadastro, Edicao } from "../index";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { css } from "../../assets/css/Css";
 
-export default function AreaRestrita({navigation}) {
+export default function AreaRestrita({ navigation }) {
   const [user, setUser] = useState(null);
   const Tab = createMaterialBottomTabNavigator();
 
@@ -21,54 +21,55 @@ export default function AreaRestrita({navigation}) {
 
   useEffect(() => {
     const backAction = () => {
-        Alert.alert("Alerta!", "Deseja mesmo sair do app?", [
-            {
-                text: "Não",
-                onPress: () => null,
-                style: "cancel"
-            },
-            { text: "Sim", onPress: () => {
-                navigation.navigate('Home');
-                BackHandler.exitApp();
-                }
-            }
-        ]);
-        return true;
+      Alert.alert("Alerta!", "Deseja mesmo sair do app?", [
+        {
+          text: "Não",
+          onPress: () => null,
+          style: "cancel"
+        },
+        {
+          text: "Sim", onPress: () => {
+            navigation.navigate('Home');
+            BackHandler.exitApp();
+          }
+        }
+      ]);
+      return true;
     };
 
     const backHandler = BackHandler.addEventListener(
-        "hardwareBackPress",
-        backAction
+      "hardwareBackPress",
+      backAction
     );
 
     return () => backHandler.remove();
-}, []);
+  }, []);
 
   return (
     <Tab.Navigator
-      activeColor="#999"
-      inactiveColor="#fff"
+      activeColor="white"
+      inactiveColor="black"
       barStyle={css.area__tab}
     >
       <Tab.Screen
         name="Perfil"
         component={Profile}
         options={{
-          tabBarIcon: () => <Icon name="users" size={20} color="#999" />
+          tabBarIcon: () => <Icon name="users" size={20} color="black" />
         }}
       />
       <Tab.Screen
         name="Cadastro"
         component={Cadastro}
         options={{
-          tabBarIcon: () => <Icon name="archive" size={20} color="#999" />
+          tabBarIcon: () => <Icon name="archive" size={20} color="black" />
         }}
       />
       <Tab.Screen
         name="Edição"
         component={Edicao}
         options={{
-          tabBarIcon: () => <Icon name="edit" size={20} color="#999" />
+          tabBarIcon: () => <Icon name="edit" size={20} color="black" />
         }}
       />
     </Tab.Navigator>

@@ -3,19 +3,27 @@ import { StyleSheet } from "react-native";
 const css = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#050505",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    paddingBottom: 60,
+  },
+  containerProfile: {
+    flex: 1,
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingBottom: 60,
   },
   container2: {
     flex: 1,
     flexDirection: "row",
-    backgroundColor: "#fff",
+    backgroundColor: "#050505",
     alignItems: "center",
     justifyContent: "center"
   },
   containerTop: {
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   button__home: {
     marginRight: 40
@@ -25,10 +33,10 @@ const css = StyleSheet.create({
     padding: 20
   },
   darkbg: {
-    backgroundColor: "#333"
+    backgroundColor: "#050505"
   },
   login__logomarca: {
-    marginBottom: 10
+    marginBottom: 1,
   },
   login__msg: (text = "none") => ({
     fontWeight: "bold",
@@ -43,12 +51,21 @@ const css = StyleSheet.create({
   login__input: {
     backgroundColor: "#fff",
     fontSize: 19,
-    padding: 7,
+    padding: 6,
     marginBottom: 15,
     borderRadius: 5,
   },
+  login__input2: {
+    backgroundColor: "#fff",
+    fontSize: 19,
+    padding: 6,
+    marginBottom: 15,
+    borderRadius: 5,
+    textAlign: 'center',
+  },
   login__button: {
-    padding: 12,
+    padding: 10,
+    width: "40%",
     backgroundColor: "gray",
     alignSelf: "center",
     borderRadius: 5,
@@ -56,22 +73,22 @@ const css = StyleSheet.create({
   login__buttonText: {
     fontWeight: "bold",
     fontSize: 22,
-    color: "#333"
+    color: "black",
+    textAlign: "center"
   },
   area__tab: {
-    backgroundColor: "#333",
-    fontSize: 20,
+    backgroundColor: "gray",
+    fontSize: 22,
     fontWeight: "bold",
-    color: "#333"
   },
   area__menu: {
     flexDirection: "row",
     paddingTop: 40,
     paddingBottom: 10,
     width: "100%",
-    backgroundColor: "#111",
+    backgroundColor: "gray",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   button__home2: {
     textAlign: "left"
@@ -80,7 +97,7 @@ const css = StyleSheet.create({
     width: "80%",
     fontWeight: "bold",
     fontSize: 20,
-    color: "#fff",
+    color: "black",
     textAlign: "center"
   },
   button__logout: {
@@ -118,11 +135,18 @@ const css = StyleSheet.create({
     marginBottom: 10,
     paddingTop: 21
   },
-  qr__code: (display = 'flex') => ({
+  contaneredicao: {
+    backgroundColor: 'black',
     width: '100%',
     height: '100%',
-    backgroundColor: '#000',
+    alignItems: 'center',
+  },
+  qr__code: (display = 'flex') => ({
+    width: '50%',
+    height: '50%',
+    backgroundColor: 'black',
     justifyContent: 'center',
+    alignItems: 'center',
     display: display
   }),
   qr__form: (display = 'none') => ({
@@ -134,8 +158,8 @@ const css = StyleSheet.create({
     marginBottom: 30,
     borderColor: '#ccc',
     borderBottomWidth: 1,
-    paddingLeft: 20,
-    paddingRight: 20
+    width: '80%',
   }
 });
+
 export { css };
