@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "exercicio",
-    "slug": "exercicio",
+    "name": "Wallisson Express",
+    "slug": "WallissonExpress",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

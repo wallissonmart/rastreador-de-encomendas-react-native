@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Text, View, Button, BackHandler, Alert } from "react-native";
+import { BackHandler, Alert } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { Profile, Cadastro, Edicao } from "../index";

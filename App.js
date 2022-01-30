@@ -1,6 +1,4 @@
-import React, { useState, useEffect, AsyncStorage } from "react";
-import { Text, View, Button, Alert } from "react-native";
-import { css } from "./assets/css/Css";
+import React, { useState, useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Home, Login, Rastreio } from "./views";
@@ -9,6 +7,7 @@ import Constants from 'expo-constants';
 import * as Permissions from 'expo-permissions';
 import { Notifications } from 'expo';
 import config from './config/config';
+
 
 export default function App() {
   const Stack = createStackNavigator();

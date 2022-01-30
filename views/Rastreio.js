@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Text, View, Button, Image, TextInput, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
 import { css } from '../assets/css/Css';
 import config from '../config/config';
 
