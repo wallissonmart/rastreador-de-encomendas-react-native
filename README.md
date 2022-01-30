@@ -1,7 +1,7 @@
 # Aplicativo de rastreio de encomendas
 
 # Home 
-<img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="300" height="400" />
 
 
 # Loguin
