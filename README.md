@@ -1,5 +1,8 @@
 # Aplicativo de rastreio de encomendas
-O aplicativo tem como objetivo o rastreio de encomendas através de um código, mas também realiza cadastros e edições de produtos no banco de dados através de um loguin de administrador
+
+## O aplicativo tem como objetivo o rastreio de encomendas através de um código de rastreio, mas também realiza cadastros e edições de produtos no banco de dados através de um loguin de administrador.
+
+## O aplicativo conta com leitor de biometria e leitor de QR Code.
 
 # Home 
 <img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="350" height="750" />
