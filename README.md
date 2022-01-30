@@ -1,8 +1,8 @@
 # Aplicativo de rastreio de encomendas
+O aplicativo tem como objetivo o rastreio de encomendas através de um código, mas também realiza cadastros e edições de produtos no banco de dados através de um loguin de administrador
 
 # Home 
 <img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="350" height="750" />
-
 
 # Loguin
 <img src="https://user-images.githubusercontent.com/93344198/151682756-946135fb-ffe3-4860-b767-28e0665320b3.jpg" width="350" height="750" />
@@ -16,8 +16,8 @@
 # Cadastrar produto
 <img src="https://user-images.githubusercontent.com/93344198/151682762-255728ee-2fb6-4dea-975e-fd1d985ee109.jpg" width="350" height="750" />
 
-# Ler QRcode de um produto para editá-lo
+# Ler QR Code de um produto para editá-lo
 <img src="https://user-images.githubusercontent.com/93344198/151682764-2a9510ee-3e01-465d-a04a-276643b607e5.jpg" width="350" height="750" />
 
-# Editar o produto depois de lido o QRcode
+# Editar o produto depois de lido o QR Code
 <img src="https://user-images.githubusercontent.com/93344198/151682763-53d38cc2-7f33-41bb-925b-3039ac50bc01.jpg" width="350" height="750" />
