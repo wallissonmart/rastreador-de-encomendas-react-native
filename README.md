@@ -40,7 +40,7 @@ Para acessar o buscador bastar clicar no seguinte link: https://wallissonmart.gi
 
 <div style="display: inline_block"><br>
 <h4 align="left">Home</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="40" height="40" />
+<img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="80" height="80" />
 <h4 align="left">Tela de loguin</h4>
 <img src="https://user-images.githubusercontent.com/93344198/151682756-946135fb-ffe3-4860-b767-28e0665320b3.jpg" width="40" height="40" />
 <h4 align="left">Tela de rastreio</h4>
