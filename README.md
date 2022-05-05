@@ -38,7 +38,7 @@ Para acessar o buscador bastar clicar no seguinte link: https://wallissonmart.gi
 <h1 align="left" id="imgs">Imagens</h1>
 
 
-<div display="flex">
+<div display="flex" flex-direction="row">
 <h4 align="left">Home</h4>
 <img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="40" height="40" />
 
