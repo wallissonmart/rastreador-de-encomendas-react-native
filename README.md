@@ -1,5 +1,5 @@
 <h1 align="left">Rastreador de encomendas</h1>
-<p align="left">Aplicação para administrar encomendas e para rastrear.</p>
+<p align="left">Aplicação para administrar e rastrear encomendas.</p>
 
 <p align="left">
  <a href="#status">Status</a> •
@@ -37,6 +37,8 @@ Para acessar o buscador bastar clicar no seguinte link: https://wallissonmart.gi
 
 <h1 align="left" id="imgs">Imagens</h1>
 
+
+<div display="flex">
 <h4 align="left">Home</h4>
 <img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="40" height="40" />
 
@@ -57,6 +59,7 @@ Para acessar o buscador bastar clicar no seguinte link: https://wallissonmart.gi
 
 <h4 align="left">Edição de produto após leitura de QR Code</h4>
 <img src="https://user-images.githubusercontent.com/93344198/151682763-53d38cc2-7f33-41bb-925b-3039ac50bc01.jpg" width="40" height="40" />
+</div>
 
 <h1 align="left" id="autor">✍️ Autor</h1>
 <a href="https://github.com/wallissonmart">
