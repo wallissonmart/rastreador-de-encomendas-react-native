@@ -20,7 +20,7 @@
 
 Para ter acesso ao aplicativo é necessário ter o NPM e o Expo instalados.
 
-Após instalá-los siga o seguines passos:
+Após instalá-los siga o seguintes passos:
 
 Passo 1: Clonar repósitorio;
 
