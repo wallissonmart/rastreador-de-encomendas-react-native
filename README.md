@@ -37,23 +37,20 @@ Para acessar o buscador bastar clicar no seguinte link: https://wallissonmart.gi
 
 <h1 align="left" id="imgs">Imagens</h1>
 
-
-<div style="display: inline_block"><br>
-<h4 align="left">Home</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="200" height="250" />
-<h4 align="left">Tela de loguin</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682756-946135fb-ffe3-4860-b767-28e0665320b3.jpg" width="40" height="40" />
-<h4 align="left">Tela de rastreio</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682755-d3a55d66-4c0b-43db-9d47-88504ea039d8.jpg" width="40" height="40" />
-<h4 align="left">Alteração de senha</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682758-1b9ac670-19dc-45e1-add3-926d0215eed2.jpg" width="40" height="40" />
-<h4 align="left">Cadastrar produto</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682762-255728ee-2fb6-4dea-975e-fd1d985ee109.jpg" width="40" height="40" />
-<h4 align="left">Leitor de QR Code</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682764-2a9510ee-3e01-465d-a04a-276643b607e5.jpg" width="40" height="40" />
-<h4 align="left">Edição de produto após leitura de QR Code</h4>
-<img src="https://user-images.githubusercontent.com/93344198/151682763-53d38cc2-7f33-41bb-925b-3039ac50bc01.jpg" width="40" height="40" />
-</div>
+<h3 align="left">Home</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="230" height="280" />
+<h3 align="left">Tela de loguin</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682756-946135fb-ffe3-4860-b767-28e0665320b3.jpg" width="230" height="280" />
+<h3 align="left">Tela de rastreio</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682755-d3a55d66-4c0b-43db-9d47-88504ea039d8.jpg" width="230" height="280" />
+<h3 align="left">Alteração de senha</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682758-1b9ac670-19dc-45e1-add3-926d0215eed2.jpg" width="230" height="280" />
+<h3 align="left">Cadastrar produto</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682762-255728ee-2fb6-4dea-975e-fd1d985ee109.jpg" width="230" height="280" />
+<h3 align="left">Leitor de QR Code</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682764-2a9510ee-3e01-465d-a04a-276643b607e5.jpg" width="230" height="280" />
+<h3 align="left">Edição de produto após leitura de QR Code</h3>
+<img src="https://user-images.githubusercontent.com/93344198/151682763-53d38cc2-7f33-41bb-925b-3039ac50bc01.jpg" width="230" height="280" />
 
 <h1 align="left" id="autor">✍️ Autor</h1>
 <a href="https://github.com/wallissonmart">
