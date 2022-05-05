@@ -47,7 +47,7 @@ Passo 4: Ler o QR Code gerado após iniciar a aplicação com <strong>npm start<
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [MySQL](https://dev.mysql.com/doc/)
 
-<h1 align="left" id="imgs">Imagens</h1>
+<h1 align="left" id="imgs">📸 Imagens</h1>
 
 <h3 align="left">Home</h3>
 <img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="230" height="280" />
