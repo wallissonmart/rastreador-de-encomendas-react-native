@@ -1,5 +1,5 @@
 <h1 align="left">Rastreador de encomendas</h1>
-<p align="left">Aplicação para administrar e rastrear encomendas.</p>
+<p align="left">Aplicação para administrar e rastrear encomendas</p>
 
 <p align="left"> •
  <a href="#status">Status</a> •
