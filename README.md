@@ -51,7 +51,7 @@ Passo 4: Ler o QR Code gerado após iniciar a aplicação com <strong>npm start<
 
 <h3 align="left">Home</h3>
 <img src="https://user-images.githubusercontent.com/93344198/151682749-b83d8fee-8fe2-43e1-9c5e-d084b7dc24fe.jpg" width="230" height="280" />
-<h3 align="left">Tela de loguin</h3>
+<h3 align="left">Tela de login</h3>
 <img src="https://user-images.githubusercontent.com/93344198/151682756-946135fb-ffe3-4860-b767-28e0665320b3.jpg" width="230" height="280" />
 <h3 align="left">Tela de rastreio</h3>
 <img src="https://user-images.githubusercontent.com/93344198/151682755-d3a55d66-4c0b-43db-9d47-88504ea039d8.jpg" width="230" height="280" />
